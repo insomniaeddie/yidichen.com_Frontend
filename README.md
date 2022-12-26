@@ -10,7 +10,8 @@ This post describes the steps I took to finish this project, from building the f
 
  **High-level architecture diagram:** 
 
-![](Q:\NetOps\Devops\Project\The Cloud resume challenge\The Cloud Resume Challenge Project\Cloud resume architecture diagram.PNG)
+![Cloud resume architecture diagram](https://user-images.githubusercontent.com/49099173/209488391-3e855c1f-066b-4446-af16-89151f33eefb.PNG)
+
 
 
 
