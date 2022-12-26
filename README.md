@@ -35,6 +35,7 @@ AWS Solutions Architect - Associate  :ballot_box_with_check:
 
 
 
+
 ### Configure frontend of the static website 
 
 
@@ -86,6 +87,7 @@ I also requested a certificate for the domain using **Amazon Certificate Manager
 Make sure to specify the default root object in the CloudFront Distribution.
 
 ![RootObject](https://user-images.githubusercontent.com/49099173/209488552-c1a146f5-4da9-430d-bd3c-16df3a848c26.PNG)
+
 
 
 
