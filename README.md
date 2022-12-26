@@ -93,7 +93,7 @@ Make sure to specify the default root object in the CloudFront Distribution.
 
 ### Configure serverless backend of the website 
 
-The resume challenge requires that your resume webpage include a visitor counter which tracks and shows how many people have visited the site. To achieve this function, the JavaScript in my static webpage invokes API URL  GET request to API Gateway.  Trigger lambda function. 
+The resume challenge requires that your resume webpage include a visitor counter which tracks and shows how many people have visited your website. The basic workflow of this function is that the JavaScript in the static webpage invokes the API URL by making a GET request to API Gateway, next the API endpoint calls the lambda function which will fetch the current visitor count from the DynamoDB table and updates it. 
 
 #### Create DynamoDB Table
 
