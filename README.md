@@ -1,6 +1,6 @@
 ##       The Cloud Resume Challenge Project  
 
-I came across **The Cloud Resume Challenge** (To learn more about the challenge, you can visit the webpage [here](https://cloudresumechallenge.dev/docs/the-challenge/aws/).) when I was looking for hands-on labs to practice my Cloud skills.  I spent a lot of my time working on this project,  and the result is that I built a serverless resume website which is completely hosted on AWS:  **[yidichen.com]()**       
+I came across **The Cloud Resume Challenge** (To learn more about the challenge, you can visit the webpage [here](https://cloudresumechallenge.dev/docs/the-challenge/aws/).) when I was looking for hands-on labs to practice my Cloud skills.  I spent a lot of my time working on this project,  and the result is that I built a serverless resume website which is completely hosted on AWS:  [yidichen.com](yidichen.com)     
 
 This post describes the steps I took to finish this project, from building the front end of the website using AWS services such as S3, CloudFront, and Route53 to setting up a visitor counter using services including API Gateway, Lambda, and DynamoDB. 
 
