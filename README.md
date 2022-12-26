@@ -6,7 +6,20 @@ This post describes the steps I took to finish this project, from building the f
 
 **Table of Contents:**
 
-[TOC]
+- [The Cloud Resume Challenge Project](#the-cloud-resume-challenge-project)
+    + [Requirement for this challenge](#requirement-for-this-challenge)
+  * [Configure frontend of the static website](#configure-frontend-of-the-static-website)
+    + [Create S3 bucket](#create-s3-bucket)
+    + [Set up CloudFront to distribute web content](#set-up-cloudfront-to-distribute-web-content)
+    + [Set up Route53](#set-up-route53)
+  * [Configure serverless backend of the website](#configure-serverless-backend-of-the-website)
+    + [Create DynamoDB Table](#create-dynamodb-table)
+    + [Create Lambda Function](#create-lambda-function)
+    + [Create API Gateway to call Lambda function](#create-api-gateway-to-call-lambda-function)
+  * [Conclusion](#conclusion)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
  **High-level architecture diagram:** 
 
