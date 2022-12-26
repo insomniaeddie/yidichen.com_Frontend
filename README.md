@@ -146,4 +146,4 @@ The visitor counter displayed on my website:
 ### Conclusion 
 This project was challenging and helpful at the same time, I have gained a lot of practical skills while working on this project. The most difficult part of this project so far is to set up the visitor counter and let it work properly,  after tons of troubleshooting and online searches, eventually, I was able to solve the problem. The sense of accomplishment and excitement when I was finally able to set up the visitor counter to display the correct number on my site is unspeakable.
 
-This project is not complete yet as I still need to automate the backend deployment using IaC and CICD, in the meantime, I'll keep grinding and continue my journey into the Cloud&Devops world.  `:muscle:
+This project is not complete yet as I still need to automate the backend deployment using IaC and CICD, in the meantime, I'll keep grinding and continue my journey into the Cloud&Devops world.   :muscle:
