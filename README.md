@@ -105,12 +105,9 @@ I created a DynamoDB table named "visitor_count", then I added an item named "vi
 
 #### Create Lambda Function 
 
+I wrote the lambda function in Python with boto3 library which is the official AWS SDK for Python. Once the API triggers the lambda function, the function increments the visitor_count value in the DynamoDB table and returns the updated value back to API. 
 
-
-Attach *AmazonDynamoDBFullAccess* policy to the IAM role created by Lambda 
-
-
-
+*Note:* The *AmazonDynamoDBFullAccess* policy needs to be attached to the IAM role created by Lambda 
 
 
 #### Create API Gateway to call Lambda function 
