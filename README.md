@@ -18,7 +18,6 @@ This post describes the steps I took to finish this project, from building the f
     + [Create API Gateway to call Lambda function](#create-api-gateway-to-call-lambda-function)
   * [Conclusion](#conclusion)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
  **High-level architecture diagram:** 
