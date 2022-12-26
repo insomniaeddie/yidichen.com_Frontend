@@ -33,7 +33,8 @@ First, I created an S3 bucket to host my static website.
 
 Next, I enabled **static website hosting** for the bucket and uploaded the HTML index file and other necessary files for my website to the bucket.
 
-![](Q:\NetOps\Devops\Project\The Cloud resume challenge\The Cloud Resume Challenge Project\Screenshots\Capture2.PNG)
+![Capture2](https://user-images.githubusercontent.com/49099173/209488496-00cd7f6c-0edf-4e7f-99f7-e6a080428af7.PNG)
+
 
 
 
@@ -43,13 +44,15 @@ Amazon CloudFront is a CDN managed by AWS, using CloudFront helps to improve web
 
 I chose my S3 bucket as the Origin domain for CloudFront and selected **OAI** to limit S3 bucket access to CloudFront only. 
 
-![](Q:\NetOps\Devops\Project\The Cloud resume challenge\The Cloud Resume Challenge Project\Screenshots\cloudfront1.PNG)
+![cloudfront1](https://user-images.githubusercontent.com/49099173/209488518-33ea5dbf-0d8f-47d5-aa24-19cde01b8cf1.PNG)
+
 
 
 
 After the distribution is created, make sure to update the bucket policy to allow access to CloudFront IAM service principal role.
 
-![](Q:\NetOps\Devops\Project\The Cloud resume challenge\The Cloud Resume Challenge Project\Screenshots\bucketPolicy.PNG)
+![bucketPolicy](https://user-images.githubusercontent.com/49099173/209488533-f635cc8e-21fe-4a57-9ddc-c3ac07386d4c.PNG)
+
 
 
 
@@ -63,13 +66,14 @@ Before setting up Route53, a domain name is required for the website. I purchase
 
 I also requested a certificate for the domain using **Amazon Certificate Manager (ACM)**. once the ACM is validated, I created another CloudFront distribution and added records in Route53, the internet traffic for my domain will be routed to the CloudFront distribution.  Next, I deleted the CloudFront distribution I created previously.
 
-![](Q:\NetOps\Devops\Project\The Cloud resume challenge\The Cloud Resume Challenge Project\Screenshots\Route53_recordsUpdate.png)
+
+![Route53_recordsUpdate](https://user-images.githubusercontent.com/49099173/209488546-927352e6-0097-49e1-a727-5242f26130ea.png)
 
 
 
 Make sure to specify the default root object in the CloudFront Distribution.
 
-![](Q:\NetOps\Devops\Project\The Cloud resume challenge\The Cloud Resume Challenge Project\Screenshots\RootObject.PNG)                                       
+![RootObject](https://user-images.githubusercontent.com/49099173/209488552-c1a146f5-4da9-430d-bd3c-16df3a848c26.PNG)
 
 
 
@@ -81,7 +85,7 @@ The resume challenge requires that your resume webpage include a visitor counter
 
 I created a DynamoDB table named "visitor_count", then I added an item named "visitor_count" to the table and set its initial value to 1. 
 
-![](Q:\NetOps\Devops\Project\The Cloud resume challenge\The Cloud Resume Challenge Project\Screenshots\DBTable.PNG)
+![DBTable](https://user-images.githubusercontent.com/49099173/209488566-8ff6b8ef-877b-48ab-98de-532ad2f09d3d.PNG)
 
 
 
@@ -99,7 +103,8 @@ Attach *AmazonDynamoDBFullAccess* policy to the IAM role created by Lambda
 
 I created a new REST API in the API Gateway console, then I created a GET method API and integrated it with the Lambda function I created earlier. Once the API is deployed and tested,  I enabled Cross Origin Resource Sharing (CORS) on the API.
 
-![](Q:\NetOps\Devops\Project\The Cloud resume challenge\The Cloud Resume Challenge Project\Screenshots\API Gateway_GetMethod.PNG)
+![API Gateway_GetMethod](https://user-images.githubusercontent.com/49099173/209488588-7445d95c-88ce-4ac8-a3ab-dd5dc9a964c2.PNG)
+
 
 An endpoint is created when the API is deployed,  the endpoint URL will be used on my website to invoke the API. 
 
@@ -121,8 +126,7 @@ function visitorCount(){
 
 The visitor counter displayed on my website: 
 
-![](Q:\NetOps\Devops\Project\The Cloud resume challenge\The Cloud Resume Challenge Project\Screenshots\visitor_count.PNG)
-
+![visitor_count](https://user-images.githubusercontent.com/49099173/209488593-44a15e3e-0411-4a85-a13f-b164b7ea0500.PNG)
 
 
 ### Conclusion 
